@@ -1,0 +1,31 @@
+extends ../layout/html-extend.pug
+block variables 
+	- var title= 'Colors & Type'
+block mixin 
+	mixin color__block(color, color__name, color__number)
+		div(class='color__block')
+			div(class='color color_' +color)
+			div(class='color__text')
+				div(class='color__name')= color__name
+				div(class='color__number')= color__number
+		mixin font__block(font__tag, font__example)
+			div(class='font__block')
+				div(class='font__tag font__tag_' +font__tag)= font__tag
+				div(class='font__example font__example_' +font__tag)= font__example
+	
+	block content
+		div.color__blocks
+			+color__block('DarkShade-100', 'Dark Shade 100%', '#1F2041')
+			+color__block('DarkShade-75', 'Dark Shade 75%', '#1F2041')
+			+color__block('DarkShade-50', 'Dark Shade 50%', '#1F2041')
+			+color__block('DarkShade-25', 'Dark Shade 25%', '#1F2041')
+			+color__block('DarkShade-5', 'Dark Shade 5%', '#1F2041')
+			+color__block('Purple', 'Purple', '#BC9CFF')
+			+color__block('Green', 'Green', '#6FCF97')
+		div.font__blocks
+			+font__block('H1', 'This one is the sub-section or widget title')
+			+font__block('H2', 'Next one is the item title inside widgets')
+			+font__block('H3', 'This is a label or CTA text')
+			+font__block('Body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.')
+
+
