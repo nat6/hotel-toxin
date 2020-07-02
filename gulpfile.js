@@ -3,7 +3,7 @@ var gulp = require('gulp'),
 		pug = require('gulp-pug'),
 		sass = require('gulp-sass');
 gulp.task('pug', function() {
-	return gulp.src('src/pug/pages/*.pug')
+	return gulp.src('src/pug/*/*.pug')
 		.pipe(pug({
 			pretty:true
 		}))
@@ -16,6 +16,6 @@ gulp.task('sass', function(){
 });
 gulp.task('watch', function() {
 	gulp.watch('src/static/scss/*.scss', gulp.parallel('sass'));
-	gulp.watch('src/pug/pages/*.pug', gulp.parallel('pug'))
+	gulp.watch('src/pug/*/*.pug', gulp.parallel('pug'))
 });
 gulp.task( 'default', gulp.parallel('sass', 'pug', 'watch'));
