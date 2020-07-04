@@ -1,0 +1,108 @@
+@import "variables.scss";
+@import "fonts.scss";
+
+.container {
+	max-width: 1440px;
+}
+.content {
+	width: 1170px;
+	display: flex;
+	justify-content: space-between;
+	// !!! Temp-position
+	position: absolute;
+	left: 150px;
+	top: 145px;
+}
+// Блок Colors
+.color__block {
+	display: flex;
+}
+.color {
+	width: 70px;
+	height: 70px;
+	margin-bottom: 20px;
+	margin-right: 40px;
+	border-radius: 6px;
+}
+.color_dark100 {
+	background: $dark100;
+}
+.color_dark75 {
+	background: $dark75;
+}
+.color_dark50 {
+	background: $dark50;
+}
+.color_dark25 {
+	background: $dark25;
+}
+.color_dark5 {
+	background: $dark5;
+}
+.color_purple {
+	background: $purple;
+}
+.color_green {
+	background: $green;
+}
+// Блок Colors Text
+.color__text {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 19px;
+}
+.color__name {
+	font-weight: bold;
+	margin-top: 9px;
+}
+.color__number {
+	margin-top: 5px;
+}
+// Блок Fonts
+.font__block {
+	display: flex;
+	margin-bottom: 50px;
+}
+.font__tag {
+	margin-right: 30px;
+	justify-content: flex-end;
+	font-family: 'Montserrat', sans-serif;
+	color: $dark25;
+
+	&_H1 {
+		font-size: 24px;
+	}
+	&_H2 {
+		font-size: 19px;
+	}
+	&_H3 {
+		font-size: 12px;
+	}
+	&_Body {
+		font-size: 14px;
+	}
+}
+.font__example {
+	max-width: 340px;
+
+	&_H1, &_H2 {
+		font-family: 'Quicksand', sans-serif;
+		font-weight: bold;
+	}
+	&_H1 {
+		font-size: 24px;
+	}
+	&_H2 {
+		font-size: 19px;
+	}
+
+	&_H3, &_Body {
+		font-family: 'Montserrat', sans-serif;
+	}
+	&_H3 {
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+	&_Body {
+		font-size: 14px;
+	}
+}
