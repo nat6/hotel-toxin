@@ -1,9 +1,7 @@
-@import "variables.scss";
-@import "fonts.scss";
+@import "import/variables.scss";
+@import "import/fonts.scss";
+@import "import/UIkit-style";
 
-.container {
-	max-width: 1440px;
-}
 .content {
 	max-width: 1103px;
 	display: flex;
