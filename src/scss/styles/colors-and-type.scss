@@ -1,0 +1,109 @@
+@import "../import/variables.scss";
+@import "../import/fonts.scss";
+@import "../import/UIkit-style.scss";
+
+.content { 
+	max-width: 1103px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 11.2%;
+	padding-top: 10.8%;
+}
+// Блок Colors
+.color__block {
+	display: flex;
+}
+.color {
+	width: 70px;
+	height: 70px;
+	margin-bottom: 20px;
+	margin-right: 40px;
+	border-radius: 6px;
+	&_dark100 {
+		background: $dark100;
+	}
+	&_dark75 {
+		background: $dark75;
+	}
+	&_dark50 {
+		background: $dark50;
+	}
+	&_dark25 {
+		background: $dark25;
+	}
+	&_dark5 {
+		background: $dark5;
+	}
+	&_purple {
+		background: $purple;
+	}
+	&_green {
+		background: $green;
+	}
+}
+// Блок Colors Text
+.color__text {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 19px;
+}
+.color__name {
+	font-weight: bold;
+	margin-top: 9px;
+}
+.color__number {
+	margin-top: 5px;
+}
+// Блок Fonts
+.font__block {
+	display: flex;
+	margin-bottom: 50px;
+}
+.font__tag {
+	margin-right: 30px;
+	width: 200px;
+	display: flex;
+	justify-content: flex-end;
+	font-family: 'Montserrat', sans-serif;
+	color: $dark25;
+
+	&_H1 {
+		font-size: 24px;
+	}
+	&_H2 {
+		font-size: 19px;
+	}
+	&_H3 {
+		font-size: 12px;
+	}
+	&_Body {
+		font-size: 14px;
+	}
+}
+.font__example {
+	max-width: 340px;
+
+	&_H1, &_H2 {
+		font-family: 'Quicksand', sans-serif;
+		font-weight: bold;
+	}
+	&_H3, &_Body {
+		font-family: 'Montserrat', sans-serif;
+	}
+	&_H1 {
+		font-size: 24px;
+	}
+	&_H2 {
+		font-size: 19px;
+	}
+	&_H3 {
+		font-size: 12px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	&_Body {
+		width: 301px;
+		font-size: 14px;
+		line-height: 24px;
+		margin-top: -3px;
+	}
+}

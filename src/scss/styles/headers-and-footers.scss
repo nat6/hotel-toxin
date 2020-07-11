@@ -1,0 +1,108 @@
+@import "../import/variables.scss";
+@import "../import/fonts.scss";
+@import "../import/UIkit-style.scss";
+@import "../import/buttons.scss";
+@import "../import/menu.scss";
+
+.container {
+	background-color: $back-color;
+}
+// menu
+.header__nav {
+	max-width: 1440px;
+	height: 70px;
+	margin-top: 140px;
+	margin-left: 0;
+	justify-content: space-around;
+	background-color: $menu-color;
+	box-shadow: 0px 10px 20px $dark5;
+}
+.header__nav, .nav__links, .nav__personal {
+	display: flex;
+}
+.nav__logo, .nav__item, .button {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.nav__logo {
+	padding-left: 1.4%;
+	padding-top: 3px;
+}
+.nav__links {
+	padding-left: 1.5%;
+	padding-bottom: 1px;
+}
+.nav__link {
+	margin-left: 21px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: $dark50;
+
+	&_active {
+		font-weight: bold;
+		color: $dark75;
+	}
+
+	&_arrow {
+		margin-left: 3px;
+		margin-right: 4px;
+	}
+}
+
+.nav__personal {
+	margin-left: 21px;
+	margin-top: 1px;
+}
+.button {
+	margin-right: 20px;
+}
+// buttons
+.button {
+	display: flex;
+	border-radius: 22px;
+}
+.button__text {
+	margin: auto;
+	padding-bottom: 1px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.button-full {
+	color: #FFFFFF;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.button-empty {
+	color: $purple;
+	border-width: 2px;
+	border-style: solid;
+	border-color: transparent;
+	background-image: linear-gradient(white, white), linear-gradient(#BC9CFF 0%, #8BA4F9 100%);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+}
+.button-full_unavailable {
+
+}
+.button-empty_unavailable {
+	
+}
+// размеры отдельных кнопок
+.button__enter {
+	width: 83px;
+	height: 30px;
+}
+.button__registration {
+	width: 196px;
+	height: 34px;
+}
+
+// Блок Logo
+.logo {
+	position: absolute;
+	padding-top: 0; 
+	margin-top: 0;
+	top: 0;
+	left: 30px;
+}
