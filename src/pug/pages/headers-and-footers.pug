@@ -1,9 +1,10 @@
 extends ../layout/UIkit-extend.pug
 block variables 
 	- var title= 'Headers & Footers'
+	link(rel='stylesheet' href='../styles/headers-and-footers.css')
 
-block mixin 
-
+block mixin
 block content
 	div.content
-
+		include ../layout/menu-log-out.pug
+		include ../layout/menu-log-in.pug 
