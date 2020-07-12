@@ -11,7 +11,8 @@ html(lang='ru-RU')
 		div.container
 			block mixin 
 			block logo
-				div.logo
-					include ../layout/logo.pug
+				div.logo__container
+					div.logo
+						include ../layout/logo.pug
 			block content
 	</body>
