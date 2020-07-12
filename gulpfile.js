@@ -10,12 +10,12 @@ gulp.task('pug', function() {
 		.pipe(gulp.dest('build/pages'));
 	});
 gulp.task('sass', function(){
-	return gulp.src('src/static/scss/*.scss')
+	return gulp.src('src/scss/styles/*.scss')
 		.pipe(sass())
 		.pipe(gulp.dest('build/styles'))
 });
 gulp.task('watch', function() {
-	gulp.watch('src/static/scss/*.scss', gulp.parallel('sass'));
+	gulp.watch('src/scss/styles/*.scss', gulp.parallel('sass'));
 	gulp.watch('src/pug/pages/*.pug', gulp.parallel('pug'))
 });
 gulp.task( 'default', gulp.parallel('sass', 'pug', 'watch'));
