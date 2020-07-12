@@ -1,0 +1,15 @@
+extends menu-extend.pug
+
+block variables
+	- var header__nav_login = true
+	- var header__nav_logout = false
+
+block nav__items
+	+nav__link('', 'О нас')
+	+nav__link('', 'Услуги')
+	+nav__link('', 'Вакансии')
+	+nav__link('', 'Новости')
+	+nav__link('', 'Соглашения')
+
+block nav__personal
+	div.username Юлий Цезарь
