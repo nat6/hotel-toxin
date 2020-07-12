@@ -1,0 +1,19 @@
+extends menu-extend.pug
+
+block variables
+	- var header__nav_login = false
+	- var header__nav_logout = true
+
+
+block nav__items
+	+nav__link('', 'О нас')
+	+nav__link('', 'Услуги')
+	+nav__link('', 'Вакансии')
+	+nav__link('', 'Новости')
+	+nav__link('', 'Соглашения')
+
+block nav__personal
+	div.button.button__enter.button-empty 
+		div.button__text Войти
+	div.button.button__registration.button-full 
+		div.button__text Зарегистрироваться
