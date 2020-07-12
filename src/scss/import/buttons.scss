@@ -1,0 +1,40 @@
+.button {
+	display: flex;
+	border-radius: 22px;
+}
+.button__text {
+	margin: auto;
+	padding-bottom: 1px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.button-full {
+	color: #FFFFFF;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.button-empty {
+	color: $purple;
+	border-width: 2px;
+	border-style: solid;
+	border-color: transparent;
+	background-image: linear-gradient(white, white), linear-gradient(#BC9CFF 0%, #8BA4F9 100%);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+}
+.button-full_unavailable {
+
+}
+.button-empty_unavailable {
+	
+}
+// размеры отдельных кнопок
+.button__enter {
+	width: 83px;
+	height: 30px;
+}
+.button__registration {
+	width: 196px;
+	height: 34px;
+}
