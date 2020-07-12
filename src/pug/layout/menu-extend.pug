@@ -1,0 +1,28 @@
+mixin nav__link(link,title)
+	if (title==='О нас')
+		div.nav__item
+			a.nav__link.nav__link_active(href=link)= title
+	else if (title==='Услуги')
+		div.nav__item
+			a.nav__link(href=link)= title
+			a.nav__link_arrow(href='') 
+				include arrow-down.pug
+	else if (title==='Соглашения')
+		div.nav__item
+			a.nav__link(href=link)= title
+			a.nav__link_arrow(href='') 
+				include arrow-down.pug
+	else
+		div.nav__item
+			a.nav__link(href=link)= title
+
+block variables
+
+div(class={'header__nav header__nav_login':header__nav_login, 'header__nav header__nav_logout':header__nav_logout})
+	div(class={'nav__logo nav__logo_login':header__nav_login, 'nav__logo nav__logo_logout':header__nav_logout})
+		a(href='') 
+			include logo-name.pug
+	div(class={'nav__links nav__links_login':header__nav_login, 'nav__links nav__links_logout':header__nav_logout})
+		block nav__items
+		div(class={'nav__personal nav__personal_login':header__nav_login, 'nav__personal nav__personal_logout':header__nav_logout})
+			block nav__personal
