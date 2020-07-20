@@ -1,6 +1,8 @@
-extends ../layout/html-extend.pug
+extends ../layout/UIkit-extend.pug
 block variables 
 	- var title= 'Colors & Type'
+	link(rel='stylesheet' href='../styles/colors-and-type.css')
+
 block mixin 
 	mixin color__block(color, color__name, color__number)
 		div(class='color__block')
