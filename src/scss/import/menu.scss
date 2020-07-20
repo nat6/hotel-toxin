@@ -19,16 +19,16 @@
 	margin-bottom: auto;
 }
 .nav__logo {
-	padding-top: 3px;
+	padding-top: 1px;
 	&_logout {
-		padding-left: 1.4%;
+		padding-left: 1.39%;
 	}
 	&_login {
 		margin-left: 9.7%;
 	}
 }
 .nav__links {
-	padding-bottom: 1px;
+	padding-bottom: 4px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	&_logout {
@@ -56,6 +56,7 @@
 	margin-top: 1px;
 	&_logout {
 		margin-left: 21px;
+		padding-top: 1px;
 	}
 }
 .button {
@@ -63,8 +64,8 @@
 }
 .username {
 	margin-left: 22px;
-	padding-left: 20px;
-	border-left: 1px solid $dark10;
 	padding-top: 6px;
 	padding-bottom: 6px;
+	padding-left: 20px;
+	border-left: 1px solid $dark10;
 }
