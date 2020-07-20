@@ -1,0 +1,186 @@
+.footer {
+	background-color: $menu-color;
+	&_mobile {
+		max-width: 768px;
+		flex-direction: column;
+		align-self: center;
+		margin: auto;
+		padding-top: 120px;
+		padding-bottom: 120px;
+		box-shadow: 0px 10px 20px $dark5;
+	}
+}
+.footer__info {
+	&_desktop {
+		display: flex;
+		padding-top: 98px;
+		padding-bottom: 78px;
+		padding-left: 7%;
+		padding-right: 7%;
+		box-shadow: 0px 1px 0px $dark10;
+	}
+	&_mobile {
+		margin-bottom: 18px;
+	}
+}
+// позиционирование логотипа
+.footer__logo {
+	&_desktop {
+		margin-bottom: 14px;
+	}
+	&_mobile {
+		display: flex;
+		justify-content: center;
+	}
+}
+// стилизация мелких текстовых элементов
+.footer__item {
+	margin-bottom: 22px;
+	line-height: 17px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: $dark50;
+}
+.footer__text {
+	line-height: 24px;
+	&_subscription {
+		max-width: 250px;
+	}
+}
+.footer__header {
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $dark100;
+	&_subscription {
+		margin-bottom: 18px;
+	}
+}
+.footer__link {
+	color: $dark50;
+}
+.footer__link, .footer__header {
+	white-space: nowrap;
+}
+// стилизация формы для email
+.form__email {
+	width: 257px;
+	height: 42px;
+	display: flex;
+	position: relative;
+	padding: 0;
+	border: 1px solid $dark25;
+	border-radius: 4px;
+}
+.input__email {
+	width: 214px;
+	height: 40px;
+	border: none;
+	border-radius: 4px;
+}
+::-webkit-input-placeholder {
+	color: $dark25;
+	font-family: 'Montserrat', sans-serif;
+	padding-left: 12px;
+}
+::-moz-placeholder {
+	color: $dark25;
+	font-family: 'Montserrat', sans-serif;
+	padding-left: 12px;
+}
+:-moz-placeholder {
+	color: $dark25;
+	font-family: 'Montserrat', sans-serif;
+	padding-left: 12px;
+}
+:-ms-input-placeholder {
+	color: $dark25;
+	font-family: 'Montserrat', sans-serif;
+	padding-left: 12px;
+}
+.input__arrow_forward {
+	position: absolute;
+	left: 224px;
+	top: 10px;
+}
+.arrow_forward {
+	background: -webkit-linear-gradient(bottom, #BC9CFF,#8BA4F9); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+	background: -moz-linear-gradient(bottom, #BC9CFF,#8BA4F9); /* Firefox 3.6-15 */
+	background: -o-linear-gradient(bottom, #BC9CFF,#8BA4F9); /* Opera 11.1-12 */
+	background: linear-gradient(to bottom, #BC9CFF,#8BA4F9); /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.input__button {
+	border: none;
+	border-radius: 4px;
+	background-color: transparent;
+	width: 44px;
+	height: 44px;
+}
+// блок copyright
+.footer__copyright {
+	&_desktop {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 24px;
+		padding-bottom: 23px;
+		padding-left: 9.72%;
+		padding-right: 9.86%;
+		box-shadow: 0px 10px 20px $dark5;
+	}
+	&_mobile {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+.copyright__text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: $dark75;
+	&_desktop {
+		padding-top: 3px;
+	}
+	&_mobile {
+		margin-top: 2px;
+	}
+}
+.footer__logo_mobile, .copyright__text_mobile {
+	margin-left: auto;
+	margin-right: auto;
+}
+.social__icons { 
+	width: 110px;
+	display: flex;
+	justify-content: space-between;
+	&_mobile {
+		margin-top: 25px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+// FOOTER DESKTOP
+.footer__block_desktop {
+	max-width: 260px;
+}
+// стилизация размеров блоков
+.footer__brand_desktop {
+	margin-left: 3.2%;
+	margin-right: 3.2%;
+}
+.footer__navigation {
+	margin-right: 4.68%;
+}
+.footer__about {
+	margin-right: 7.5%;
+}
+.footer__support {
+	margin-right: 4.2%;
+	margin-bottom: 10px;
+}
+.footer__navigation, .footer__about, .footer__support, .footer__subscription {
+	margin-top: 5px;
+}
