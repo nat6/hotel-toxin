@@ -1,0 +1,35 @@
+extends footer-extend.pug
+
+block variables
+	- var footer_mobile = false
+	- var footer_desktop = true
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+block footer__text
+	div.footer__item.footer__text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+
+block footer__links
+	div.footer__block.footer__navigation
+		+footer__link('', 'Навигация', 'header')
+		+footer__link('', 'О нас')
+		+footer__link('', 'Новости')
+		+footer__link('', 'Служба поддержки')
+		+footer__link('', 'Услуги')
+	div.footer__block.footer__about
+		+footer__link('', 'О нас', 'header')
+		+footer__link('', 'О сервисе')
+		+footer__link('', 'Наша команда')
+		+footer__link('', 'Вакансии')
+		+footer__link('', 'Инвесторы')
+	div.footer__block.footer__support
+		+footer__link('', 'Служба поддержки', 'header')
+		+footer__link('', 'Соглашения')
+		+footer__link('', 'Сообщества')
+		+footer__link('', 'Связь с нами')
+	div.footer__block.footer__subscription
+		+footer__link('', 'Подписка', 'header', 'subscription')
+		div.footer__item.footer__text.footer__text_subscription Получайте специальные предложения и новости сервиса
+		div.form__email
+			input.input__email(type='email' name='email' placeholder='Email')
+			<i class="material-icons arrow_forward input__arrow_forward">arrow_forward</i>
+			button.input__button(type='submit' name='submit__email' value='' formaction='' formmethod="post" )
