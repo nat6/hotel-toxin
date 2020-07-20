@@ -4,11 +4,13 @@
 @import "../import/buttons.scss";
 @import "../import/menu.scss";
 @import "../import/logo.scss";
+@import "../import/social-icons.scss";  
+@import "../import/footer.scss";  
 
 .container {
 	background-color: $back-color;
+	padding-bottom: 140px;
 }
-// menu 
 .header__nav {
 	&_logout {
 		margin-top: 60px;
@@ -16,4 +18,7 @@
 	&_login {
 		margin-top: 40px;
 	}
+}
+.footer {
+	margin-top: 40px;
 }
