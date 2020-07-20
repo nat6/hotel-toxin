@@ -12,14 +12,20 @@
 }
 .button-full {
 	color: #FFFFFF;
-	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	background: -webkit-linear-gradient(top, #BC9CFF,#8BA4F9); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+	background: -moz-linear-gradient(top, #BC9CFF,#8BA4F9); /* Firefox 3.6-15 */
+	background: -o-linear-gradient(top, #BC9CFF,#8BA4F9); /* Opera 11.1-12 */
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
 }
 .button-empty {
 	color: $purple;
 	border-width: 2px;
 	border-style: solid;
 	border-color: transparent;
-	background-image: linear-gradient(white, white), linear-gradient(#BC9CFF 0%, #8BA4F9 100%);
+	background-image: -webkit-linear-gradient(white, white), -webkit-linear-gradient(#BC9CFF,#8BA4F9); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+	background-image: -moz-linear-gradient(white, white), -moz-linear-gradient(#BC9CFF,#8BA4F9); /* Firefox 3.6-15 */
+	background-image: -o-linear-gradient(white, white), -o-linear-gradient(#BC9CFF,#8BA4F9); /* Opera 11.1-12 */
+	background-image: linear-gradient(white, white), linear-gradient(#BC9CFF 0%, #8BA4F9 100%); /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 }
