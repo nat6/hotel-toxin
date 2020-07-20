@@ -1,0 +1,10 @@
+.fab {
+	font-size: 24px;
+	line-height: 23px;
+	background: -webkit-linear-gradient(bottom, #BC9CFF,#8BA4F9); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+	background: -moz-linear-gradient(bottom, #BC9CFF,#8BA4F9); /* Firefox 3.6-15 */
+	background: -o-linear-gradient(bottom, #BC9CFF,#8BA4F9); /* Opera 11.1-12 */
+	background: linear-gradient(to bottom, #BC9CFF,#8BA4F9); /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
